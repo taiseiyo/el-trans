@@ -3,7 +3,7 @@ A simple translator that runs on emacs
 
 * Programming language
 - Python
-  - googletrans
+  - [[https://pypi.org/project/googletrans/4.0.0rc1/][googletrans(version 4.0.0rc1)]]
     
 - Emacs lisp
 
