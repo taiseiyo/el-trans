@@ -1,0 +1,17 @@
+* el-trans
+A simple translator that runs on emacs
+
+* Programming language
+- Python
+  - googletrans
+    
+- Emacs lisp
+
+* Preparation
+
+Place el-trans in a directory in your PATH and el-trans.el in a
+directory in your load-path.
+
+* DEMO
+
+[[https://github.com/taiseiyo/el-trans/blob/master/animation/anime.gif]]
