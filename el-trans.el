@@ -16,7 +16,7 @@
   )
 
 (defun el-trans-jp2en()
-  "Change the selection range from English to Japanese"
+  "Change the selection range from Japanese to English"
   (interactive)
   (setq temp_file (make-temp-file "temp")
 	command (concat "el-trans " temp_file " -bt ja -at en"))
