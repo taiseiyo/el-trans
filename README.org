@@ -12,6 +12,12 @@ A simple translator that runs on emacs
 Place el-trans in a directory in your PATH and el-trans.el in a
 directory in your load-path.
 
+- The Case From English to Japanese
+  - el-trans-en2jp
+
+- The Case From Japanese to English
+  - el-trans-jp2en
+
 * DEMO
 
 [[https://github.com/taiseiyo/el-trans/blob/master/animation/anime.gif]]
