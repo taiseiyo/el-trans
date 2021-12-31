@@ -11,7 +11,7 @@
   "Change the selection range from English to Japanese"
   (interactive)
   (setq temp_file (make-temp-file "temp")
-	command (concat "el-trans " temp_file " -bt en -at ja"))
+	command (concat "python3 " (getenv "HOME") "/bin/el-trans " temp_file " -bt en -at ja"))
   (el-trans-main)
   )
 
@@ -19,7 +19,7 @@
   "Change the selection range from Japanese to English"
   (interactive)
   (setq temp_file (make-temp-file "temp")
-	command (concat "el-trans " temp_file " -bt ja -at en"))
+	command (concat "python3 " (getenv "HOME") "/bin/el-trans " temp_file " -bt ja -at en"))
 	
   (el-trans-main)
   )
