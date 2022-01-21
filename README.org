@@ -9,7 +9,8 @@ Please register for an account (free of charge) before using.
 
 * Programming language
 - Python
-  - [[https://pypi.org/project/googletrans/4.0.0rc1/][googletrans(version 4.0.0rc1)]]
+  - python-deepl(version  1.4.0)
+  # - [[https://pypi.org/project/googletrans/4.0.0rc1/][googletrans(version 4.0.0rc1)]]
     
 - Emacs lisp
 
