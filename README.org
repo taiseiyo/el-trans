@@ -19,6 +19,13 @@ Please register for an account (free of charge) before using.
 Place el-trans in a directory in your PATH and el-trans.el in a
 directory in your load-path.
 
+Change to your own *API KEY registered in deepl_api_key*, a variable in
+el-trans (program name).
+
+#+begin_src python
+deepl_api_key = "Your Api Key"
+#+end_src
+
 - The Case From English to Japanese
   - el-trans-en2jp
 
