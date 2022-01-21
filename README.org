@@ -22,8 +22,9 @@ directory in your load-path.
 Substituting the registered *"API KEY"* into the variable
 *deepl_api_key* of [el-trans (program name)].
 
-#+begin_src python el-trans
-deepl_api_key = "Your Api Key"
+#+begin_src python
+#+NAME: el-trans
+  deepl_api_key = "Your Api Key"
 #+end_src
 
 - The Case From English to Japanese
