@@ -1,5 +1,11 @@
 * el-trans
-A simple translator that runs on emacs
+A simple translator that runs on emacs. Use deepL for translation.
+Please register for an account (free of charge) before using.
+
+- [[https://www.deepl.com/ja/pro/change-plan?utm_source=github&utm_medium=github-python-readme#developer][Register account]]
+- [[https://www.deepl.com/ja/blog/announcing-python-client-library-for-deepl-api][DeepL Official page]]
+- [[https://github.com/DeepLcom/deepl-python][GitHub: deepL]]
+
 
 * Programming language
 - Python
