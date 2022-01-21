@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import deepl
 import googletrans
 import fileinput
 import argparse
@@ -32,12 +33,17 @@ def text_edit(text):
 
 def main():
     parse = arg_parse()
-    translator = googletrans.Translator()
+
+    deepl_api_key = "Your Api Key"
+    translator = deepl.Translator(deepl_api_key)
+
     text = " ".join(list(fileinput.input(files=parse.files)))
     text = text_edit(text)
-    trans_text = translator.translate(
-        text, src=parse.btrans, dest=parse.atrans)
-    print(trans_text.text)
+    # translator = googletrans.Translator()
+    # trans_text = translator.translate(
+    #     text, src=parse.btrans, dest=parse.atrans)
+    result = translator.translate_text(text, target_lang=parse.atrans)
+    print(result.text)
 
 
 main()
