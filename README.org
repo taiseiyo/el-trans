@@ -23,7 +23,7 @@ Substituting the registered *"API KEY"* into the variable
 *deepl_api_key* of [el-trans (program name)].
 
 #+begin_src python
-  deepl_api_key = "Your Api Key" # el-trans variable
+  deepl_api_key = "Your Api Key" # variable in el-trans(program name)
 #+end_src
 
 - The Case From English to Japanese
