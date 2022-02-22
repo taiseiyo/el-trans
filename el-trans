@@ -41,6 +41,7 @@ def main():
 
     text = " ".join(list(fileinput.input(files=parse.files)))
     text = text_edit(text)
+
     # translator = googletrans.Translator()
     # trans_text = translator.translate(
     #     text, src=parse.btrans, dest=parse.atrans)
