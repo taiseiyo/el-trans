@@ -34,8 +34,8 @@ def text_edit(text):
 
 def main():
     parse = arg_parse()
-    dir = os.path.dirname(__file__)
-    f = open(dir + "/.auth_key", "r")
+    directory = os.path.dirname(__file__)
+    f = open(directory + "/.auth_key", "r")
     deepl_api_key = f.read()
     translator = deepl.Translator(deepl_api_key)
 
