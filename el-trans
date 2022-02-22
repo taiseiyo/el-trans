@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import os
 import deepl
 import googletrans
 import fileinput
@@ -33,8 +34,9 @@ def text_edit(text):
 
 def main():
     parse = arg_parse()
-
-    deepl_api_key = "Your Api Key"
+    dir = os.path.dirname(__file__)
+    f = open(dir + "/.auth_key", "r")
+    deepl_api_key = f.read()
     translator = deepl.Translator(deepl_api_key)
 
     text = " ".join(list(fileinput.input(files=parse.files)))
