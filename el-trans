@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from dotenv import dotenv_values
 import os
 import deepl
 import googletrans
@@ -34,9 +35,7 @@ def text_edit(text):
 
 def main():
     parse = arg_parse()
-    directory = os.path.dirname(__file__)
-    f = open(directory + "/.auth_key", "r")
-    deepl_api_key = f.read()
+    deepl_api_key = get_apikey()
     translator = deepl.Translator(deepl_api_key)
 
     text = " ".join(list(fileinput.input(files=parse.files)))
@@ -47,6 +46,12 @@ def main():
     #     text, src=parse.btrans, dest=parse.atrans)
     result = translator.translate_text(text, target_lang=parse.atrans)
     print(result.text)
+
+
+def get_apikey():
+    dotenv_path = os.path.dirname(__file__) + "/.env"
+    config = dotenv_values(dotenv_path)
+    return config["deepl_apiKey"]
 
 
 main()
